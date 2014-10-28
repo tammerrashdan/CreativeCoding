@@ -32,7 +32,7 @@ float rad; // an initial radius value for the central sine
 int i; // a counter variable
 
 // play with these to get a sense of what's going on:
-float fund = 0.02; // the speed of the central sine
+float fund = 0.04; // the speed of the central sine
 float ratio = 1.5; // what multiplier for speed is each additional sine?
 int alpha = 75; // how opaque is the tracing system
 
@@ -64,8 +64,8 @@ void draw()
 
   if (!trace) background(255); // clear screen if showing geometry
   if (!trace) {
-    stroke(0, 255); // black pen
-    noFill(); // don't fill
+    stroke(0, 0, 255); // black pen
+    fill(0, random(200,255), 0); // don't fill
   }  
 
   // MAIN ACTION
