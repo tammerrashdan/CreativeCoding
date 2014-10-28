@@ -77,8 +77,8 @@ void draw()
     float erad = 0; // radius for small "point" within circle... this is the 'pen' when tracing
     // setup tracing
     if (trace) {
-      stroke(0, 0, 255*(float(i)/sines.length), alpha); // blue
-      fill(0, 0, 255, alpha/2); // also, um, blue
+      stroke(0, 255*(float(i)/sines.length), 0, alpha); // blue
+      fill(random(0,255), 0, random(0,255), alpha/2); // also, um, blue
       erad = 5.0*(1.0-float(i)/sines.length); // pen width will be related to which sine
       eradius = erad;
     }
